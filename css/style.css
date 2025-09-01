@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jomhuria", serif;
+  /* background: #212534 !important; */
+}
+
+.Vip {
+  position: relative;
+}
+
+.Vip::before {
+  content: "";
+  width: 103%;
+  height: 102%;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #ffe000,
+    #9cecfb 43%,
+    #799f0c
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -1.5%;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.trCard {
+  transition: transform 0.2s ease-in-out;
+}
+
+.trCard:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 1000px;
+  }
+}
