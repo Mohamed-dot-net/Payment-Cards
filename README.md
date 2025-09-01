@@ -19,12 +19,10 @@ my-cards/
 ## Getting Started
 
 1. Clone or download the repository.
+2. Open `index.html` in your browser to view the main page.
 
 ## Run the project here
 https://mohamed-dot-net.github.io/Payment-Cards/
-2. Open `index.html` in your browser to view the main page.
-3. For testing, open `test.html`.
-
 ## Customization
 
 - Modify `css/style.css` to change the appearance of the cards and layout.
